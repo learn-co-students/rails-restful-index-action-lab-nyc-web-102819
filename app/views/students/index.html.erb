@@ -1,3 +1,8 @@
-<h1> all students </h1>
 
-<p> @students.map |each| {each.name}
+
+<div> 
+    <% @students.map do |student| %>
+    <div> <%= student.to_s %> </div>
+    <% end %>
+
+</div>
